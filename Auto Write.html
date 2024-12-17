@@ -1,0 +1,61 @@
+<!-- made by ChatGPT-->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>チャット</title>
+</head>
+<body>
+  <h1>チャットを送信</h1>
+  <button onclick="sendData()">チャットを送信</button>
+
+  <script>
+    function sendData() {
+      // ユーザーが指定するURLを入力
+      var scriptUrl = prompt("指定されたURLを入力してください:");
+      
+      // URLがキャンセルされた場合や空文字の場合は処理を終了
+      if (scriptUrl === null || scriptUrl === "") {
+        alert("URLが入力されませんでした。");
+        return;
+      }
+
+      // ユーザー名を入力
+      var username = prompt("ユーザー名を入力してください:");
+      
+      // ユーザー名がキャンセルされた場合や空文字の場合は処理を終了
+      if (username === null || username === "") {
+        alert("ユーザー名が入力されませんでした。");
+        return;
+      }
+
+      // 入力データを入力
+      var inputData = prompt("チャット内容を入力してください:");
+
+      // 入力がキャンセルされた場合や空文字の場合は処理を終了
+      if (inputData === null || inputData === "") {
+        alert("入力がキャンセルされました。");
+        return;
+      }
+
+      // フェッチAPIを使ってPOSTリクエストを送信
+      fetch(scriptUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: "username=" + encodeURIComponent(username) + "&inputData=" + encodeURIComponent(inputData)  // ユーザー名とデータを送信
+      })
+      .then(response => response.text())
+      .then(data => {
+        alert("データが送信されました！");  // 成功メッセージ
+      })
+      .catch(error => {
+        alert("エラーが発生しました: " + error);  // エラーメッセージ
+      });
+    }
+  </script>
+</body>
+</html>
