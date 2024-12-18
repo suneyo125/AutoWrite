@@ -1,0 +1,11 @@
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var username = e.parameter.username;  // ユーザー名を取得
+  var inputData = e.parameter.inputData;  // 入力データを取得
+  
+  // ユーザー名と入力データを新しい行に追加
+  sheet.appendRow([username, inputData]);
+  
+  // 成功メッセージを返す
+  return ContentService.createTextOutput("Success");
+}
