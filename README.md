@@ -1,5 +1,4 @@
-このプログラムは、情報を書き込みたいGoogleSpreadSheetにユーザー名、内容をJavascript経由でGAS(Google Apps Script)に送信し、
-スプレッドシートに書き込むプログラムです。
+このプログラムは、情報を書き込みたいGoogleSpreadSheetにユーザー名、内容をJavascript経由でGAS(Google Apps Script)に送信し、<br>スプレッドシートに書き込むプログラムです。
 
 ※注意　
 シートを作るときはGoogleアカウントが必要です。
