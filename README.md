@@ -5,18 +5,7 @@
 シートの設定は、「リンクを知っている全員」で、閲覧者、閲覧者（コメント可）、編集者　のどれかでないといけません。限られた人の設定（学校、企業内）では使用することが出来ません。
 スプレッドシートには、GASのプログラムが必要です。以下のプログラムをデータを入れたいプログラムのスプレッドシートのGASに入手してください。
 
-
-function doPost(e) {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  var username = e.parameter.username;  // ユーザー名を取得
-  var inputData = e.parameter.inputData;  // 入力データを取得
-  
-  // ユーザー名と入力データを新しい行に追加
-  sheet.appendRow([username, inputData]);
-  
-  // 成功メッセージを返す
-  return ContentService.createTextOutput("Success");
-}
+****
 
 
 <前提>
