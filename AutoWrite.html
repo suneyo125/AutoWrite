@@ -5,11 +5,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>チャット</title>
+  <title>AutoWrite</title>
 </head>
 <body>
-  <h1>チャットを送信</h1>
-  <button onclick="sendData()">チャットを送信</button>
+  <h1>内容の送信</h1>
+  <button onclick="sendData()">送信</button>
 
   <script>
     function sendData() {
@@ -32,7 +32,7 @@
       }
 
       // 入力データを入力
-      var inputData = prompt("チャット内容を入力してください:");
+      var inputData = prompt("送りたい内容を入力してください:");
 
       // 入力がキャンセルされた場合や空文字の場合は処理を終了
       if (inputData === null || inputData === "") {
