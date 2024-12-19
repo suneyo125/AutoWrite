@@ -7,8 +7,12 @@
 
 [GASprogram.txt](https://github.com/suneyo125/AutoWriteGoogleSpreadSheet/blob/main/GASprogram.txt)
 
-
+<br>
+<br>
 <前提>
-リンクを知っている全員（閲覧者、閲覧者（コメント可）、編集者　どれでも可）で共有されているGoogleスプレッドシート（GAS入手付み）
+<br>リンクを知っている全員（閲覧者、閲覧者（コメント可）、編集者　どれでも可）で共有されているGoogleスプレッドシート（GAS入力付み）
+<br>
+<br>
+<br><使い方>
 
 
