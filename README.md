@@ -9,7 +9,7 @@
 <br>シートの設定は、「リンクを知っている全員」で、閲覧者、閲覧者（コメント可）、編集者　のどれかでないといけません。限られた人の設定（学校、企業内）では使用することが出来ません。
 <br>スプレッドシートには、GASのプログラムが必要です。以下のプログラムをデータを入れたいプログラムのスプレッドシートのGASに入手してください。
 
-[GASprogram.txt](https://github.com/suneyo125/AutoWriteGoogleSpreadSheet/blob/main/GASprogram.txt)
+[GASprogram.txt](https://github.com/suneyo125/AutoWriteGoogleSpreadSheetverAlert/blob/main/GASprogram.txt)
 <br>
 <br>
 # <前提>
